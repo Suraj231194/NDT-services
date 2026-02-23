@@ -58,8 +58,8 @@ export default function Footer() {
                             </li>
                             <li>
                                 <span className="icon">📞</span>
-                                <a href="tel:+919665854450">09665854450</a> <br />
-                                <a href="tel:+919921891766">9921891766</a>
+                                <a href="tel:+919766119481">+91 97661 19481</a> <br />
+                                <a href="tel:+919665854450" style={{ marginLeft: "28px" }}>+91 96658 54450</a>
                             </li>
                             <li>
                                 <span className="icon">✉️</span>

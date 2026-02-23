@@ -32,9 +32,10 @@ export default function Header() {
             <div className="top-bar">
                 <div className="container top-bar-inner">
                     <div className="contact-info">
-                        <a href="tel:+919665854450">📞 +91 96658 54450</a>
-                        <a href="mailto:infinityndtservices@gmail.com">✉️ infinityndtservices@gmail.com</a>
-                        <span className="address-info hide-mobile">📍 Plot No. F 59, AMBAD MIDC, Nashik - 422010</span>
+                        <a href="tel:+919766119481">📞 +91 97661 19481</a>
+                        <a href="tel:+919665854450" className="hide-mobile">/ +91 96658 54450</a>
+                        <a href="mailto:infinityndtservices@gmail.com" style={{ marginLeft: "15px" }}>✉️ infinityndtservices@gmail.com</a>
+                        <span className="address-info hide-mobile" style={{ marginLeft: "15px" }}>📍 Plot No. F 59, AMBAD MIDC, Nashik - 422010</span>
                     </div>
                     <div className="social-links">
                         <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="whatsapp-top" aria-label="WhatsApp">
