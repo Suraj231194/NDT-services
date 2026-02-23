@@ -17,7 +17,7 @@ export default function Home() {
           <p style={{ marginBottom: '40px', fontSize: '1.2rem', color: '#e0e0e0', maxWidth: '800px', margin: '0 auto 40px' }}>We are the trusted partners for power plants, refineries, and major constructors across India, ensuring absolute asset integrity, zero unexpected downtime, and strict adherence to AERB & international safety codes.</p>
           <div className="hero-actions">
             <Link href="/contact" className="btn btn-primary">Schedule a Consultation</Link>
-            <a href={`https://wa.me/919665854450?text=${genericWhatsAppMsg}`} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+            <a href={`https://wa.me/919766119481?text=${genericWhatsAppMsg}`} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
               Rapid WhatsApp Support
             </a>
           </div>
@@ -61,7 +61,7 @@ export default function Home() {
               <p>Volumetric inspection utilizing Gamma Ray & X-Ray techniques to reveal internal sub-surface flaws in heavy castings, pipelines, and critical weldments.</p>
               <div className="card-actions">
                 <Link href="/services/radiography-testing" className="text-link">Explore RT</Link>
-                <a href={`https://wa.me/919665854450?text=${getServiceMsg('Radiography Testing')}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">Inquire</a>
+                <a href={`https://wa.me/919766119481?text=${getServiceMsg('Radiography Testing')}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">Inquire</a>
               </div>
             </div>
 
@@ -74,7 +74,7 @@ export default function Home() {
               <p>Deploying high-frequency sound waves to accurately detect internal imperfections and conduct precise wall thickness gauging on live assets.</p>
               <div className="card-actions">
                 <Link href="/services/ultrasonic-testing" className="text-link">Explore UT</Link>
-                <a href={`https://wa.me/919665854450?text=${getServiceMsg('Ultrasonic Testing')}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">Inquire</a>
+                <a href={`https://wa.me/919766119481?text=${getServiceMsg('Ultrasonic Testing')}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">Inquire</a>
               </div>
             </div>
 
@@ -87,7 +87,7 @@ export default function Home() {
               <p>Magnetic yoke applications producing immediate visible indications of surface and slightly sub-surface cracks in ferromagnetic structures.</p>
               <div className="card-actions">
                 <Link href="/services/magnetic-particle" className="text-link">Explore MPT</Link>
-                <a href={`https://wa.me/919665854450?text=${getServiceMsg('Magnetic Particle Testing')}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">Inquire</a>
+                <a href={`https://wa.me/919766119481?text=${getServiceMsg('Magnetic Particle Testing')}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">Inquire</a>
               </div>
             </div>
 
@@ -100,35 +100,48 @@ export default function Home() {
               <p>High-contrast dye capillary action analysis offering an economical yet incredibly sensitive method for detecting microscopic surface-breaking defects.</p>
               <div className="card-actions">
                 <Link href="/services/liquid-penetrant" className="text-link">Explore LPT</Link>
-                <a href={`https://wa.me/919665854450?text=${getServiceMsg('Liquid Penetrant Testing')}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">Inquire</a>
+                <a href={`https://wa.me/919766119481?text=${getServiceMsg('Liquid Penetrant Testing')}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">Inquire</a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Service 5 */}
-            <div className="service-card">
-              <div className="service-img-preview" style={{ position: 'relative', height: '180px', marginBottom: '20px', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/images/rla_service.png" alt="RLA Testing" fill style={{ objectFit: 'cover' }} />
-              </div>
-              <h3>RLA Testing of Boilers</h3>
-              <p>Comprehensive Remaining Life Assessment to mathematically predict the lifespan of industrial boilers, ensuring IBR compliance and prolonging safe operational limits.</p>
-              <div className="card-actions">
-                <Link href="/services/rla-testing" className="text-link">Explore RLA</Link>
-                <a href={`https://wa.me/919665854450?text=${getServiceMsg('RLA Testing of Boilers')}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">Inquire</a>
-              </div>
+      {/* Key Customers Section */}
+      <section className="section-padding bg-light customers-section">
+        <div className="container">
+          <span className="subtitle" style={{ color: 'var(--primary-color)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}>Trusted By Industry Leaders</span>
+          <h2 className="section-title">Our Key Customers</h2>
+          <div className="customers-grid">
+            <div className="customer-card">
+              <h4 className="customer-name">Hindustan Aeronautics Limited</h4>
             </div>
-
-            {/* Service 6 */}
-            <div className="service-card highlight-card">
-              <div className="service-img-preview bg-dark" style={{ position: 'relative', height: '180px', marginBottom: '20px', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/images/equipment_service.png" alt="Equipment Distribution" fill style={{ objectFit: 'cover' }} />
-                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(13, 44, 84, 0.4)' }}></div>
-              </div>
-              <h3>Equipment Distribution</h3>
-              <p>Procure certified industrial inspection gear directly through us. We supply robust Survey Meters, MODSONIC gauges, and Agfa accessories nationwide.</p>
-              <div className="card-actions">
-                <Link href="/services/equipment-distribution" className="text-link">View Catalog</Link>
-                <a href={`https://wa.me/919665854450?text=${getServiceMsg('Equipment Distribution')}`} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm btn-outline-white">Inquire</a>
-              </div>
+            <div className="customer-card">
+              <h4 className="customer-name">Maharashtra Natural Gas Limited</h4>
+            </div>
+            <div className="customer-card">
+              <h4 className="customer-name">Artson Engineering Pvt Ltd</h4>
+            </div>
+            <div className="customer-card">
+              <h4 className="customer-name">Shree Laxmi Boilers</h4>
+            </div>
+            <div className="customer-card">
+              <h4 className="customer-name">Resonance Energy Pvt Ltd</h4>
+            </div>
+            <div className="customer-card">
+              <h4 className="customer-name">R&amp;D Therm India Pvt Ltd</h4>
+            </div>
+            <div className="customer-card">
+              <h4 className="customer-name">Reliable Thermocraft Pvt Ltd</h4>
+            </div>
+            <div className="customer-card">
+              <h4 className="customer-name">Thyssenkrupp Electrical Steel India Pvt Ltd</h4>
+            </div>
+            <div className="customer-card">
+              <h4 className="customer-name">Adam Fabriwerk Pvt Ltd</h4>
+            </div>
+            <div className="customer-card">
+              <h4 className="customer-name">Shree Omkar Enterprises</h4>
             </div>
           </div>
         </div>

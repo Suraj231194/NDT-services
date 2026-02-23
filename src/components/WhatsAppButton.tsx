@@ -18,7 +18,7 @@ export default function WhatsAppButton() {
     }, []);
 
     const whatsappMessage = encodeURIComponent("Hello, I am contacting Infinity NDT & Technical Services regarding your NDT services. Please assist me.");
-    const whatsappUrl = `https://wa.me/919665854450?text=${whatsappMessage}`;
+    const whatsappUrl = `https://wa.me/919766119481?text=${whatsappMessage}`;
 
     return isVisible ? (
         <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="floating-whatsapp" aria-label="Contact us on WhatsApp">
