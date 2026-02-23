@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# Infinity NDT & Technical Services
+  
+**Securing the Future Through Precision Industrial Inspection & Non-Destructive Testing**
 
-First, run the development server:
+<p>
+  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js" alt="Next.js" /></a>
+  <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react" alt="React" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript" alt="TypeScript" /></a>
+</p>
+
+<p>
+  <b>Made with ❤️ by Suraj</b>
+</p>
+<br />
+</div>
+
+## 🌟 Overview
+
+Infinity NDT & Technical Services is an elite provider of Non-Destructive Testing (NDT), Inspection, and Technical Audits catering to mission-critical industries including Refineries, Power Projects, and Heavy Manufacturing. 
+
+This repository hosts the modern, highly performant web application serving as the premium digital storefront for the business.
+
+## ✨ Premium Features
+
+- **Glassmorphism UI**: High-end modern design utilizing advanced CSS backdrop filters, smooth gradients, and deep thematic styling.
+- **Dynamic Micro-Animations**: Visually engaging interactive hover effects on service listings and the Key Customers grid.
+- **Responsive Layout Architecture**: Fluid multi-column CSS Grid layouts that dynamically scale from multiple desktop columns down to a seamless mobile experience.
+- **Direct WhatsApp Integration**: Floating action buttons and embedded deep links with pre-filled inquiry text for rapid customer support.
+
+## 🛠️ Technology Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router Architecture)
+- **Language**: [TypeScript](https://www.typescriptlang.org/) for type safety 
+- **Styling**: Robust Vanilla CSS employing custom CSS variables (`var()`) for highly maintainable color schemes, typography, and shadow effects.
+- **Icons**: Lean SVG rendering.
+
+## 🚀 Getting Started
+
+To run this project locally, clone the repository and execute:
 
 ```bash
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to explore the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Core Services Displayed
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Radiography Testing (RT)
+2. Ultrasonic Testing (UT)
+3. Magnetic Particle Testing (MPT)
+4. Liquid Penetrant Testing (LPT)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+  <i>Built from the ground up by <b>Suraj</b></i>
+</div>
