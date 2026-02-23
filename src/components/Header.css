@@ -1,0 +1,263 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: var(--bg-light);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.header.scrolled .top-bar {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.top-bar {
+    background: var(--primary-color);
+    color: var(--text-light);
+    font-size: 0.85rem;
+    padding: 8px 0;
+    max-height: 50px;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.top-bar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-info a,
+.contact-info span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.contact-info a:hover {
+    color: var(--secondary-color);
+}
+
+.whatsapp-top {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #25D366;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.whatsapp-top:hover {
+    background: #128C7E;
+}
+
+.main-nav-wrapper {
+    background: #ffffff;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: -4px;
+}
+
+.logo span {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-item {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 10px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.caret {
+    font-size: 0.7rem;
+    margin-left: 2px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 250px;
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: var(--transition);
+    z-index: 10;
+    border-top: 3px solid var(--secondary-color);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dropdown-menu a:hover {
+    background: var(--bg-light);
+    color: var(--secondary-color);
+    padding-left: 25px;
+}
+
+.dropdown-menu .view-all {
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+}
+
+.dropdown-menu .view-all:hover {
+    background: var(--secondary-color);
+    color: #fff;
+    padding-left: 20px;
+}
+
+.ml-4 {
+    margin-left: 1rem;
+}
+
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        /* Below header */
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: #ffffff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        transition: 0.3s;
+        overflow-y: auto;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border-top: none;
+        border-left: 2px solid var(--secondary-color);
+        margin-left: 15px;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .dropdown:active .dropdown-menu {
+        display: block;
+    }
+
+    .mobile-full-btn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /* Hamburger Animation */
+    .bar.open:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .bar.open:nth-child(2) {
+        opacity: 0;
+    }
+
+    .bar.open:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
